@@ -1,0 +1,41 @@
+.training-talents-bg {
+    background-color: #cfe2f5;
+    background-image: url('../../assets/talent.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    margin-top: -2%;
+  }
+  
+  .content {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content h1,
+  .content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .training-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .training-card .card-body {
+    padding: 2rem;
+  }
+  
+  .training-card .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .training-card .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

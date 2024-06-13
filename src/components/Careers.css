@@ -1,0 +1,63 @@
+/* Careers.css */
+
+.careers {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 50px 0; /* Add some padding for better spacing */
+  height: 100vh; /* Make the section full-screen */
+  display: flex; /* Use flexbox to center content vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.careers-container {
+  max-width: 1200px; /* Limit the width of the content */
+  width: 100%; /* Ensure content stretches to full width */
+}
+
+.careers h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark gray text color */
+  margin-bottom: 20px;
+}
+
+.careers p {
+  font-size: 18px;
+  color: #666; /* Medium gray text color */
+  margin-bottom: 20px;
+}
+
+.careers ul {
+  list-style-type: none; /* Remove default list style */
+  padding-left: 0; /* Remove default padding */
+}
+
+.careers ul li {
+  font-size: 18px;
+  color: #007bff; /* Blue text color */
+  margin-bottom: 10px;
+}
+
+.careers a {
+  color: #007bff; /* Blue link color */
+}
+
+.careers a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .careers h1 {
+    font-size: 28px;
+  }
+
+  .careers p {
+    font-size: 16px;
+  }
+}

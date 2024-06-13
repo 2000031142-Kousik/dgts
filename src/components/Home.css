@@ -1,0 +1,122 @@
+/* Home.css */
+
+/* Carousel styling */
+.home .carousel {
+  margin-top: 0; /* Remove margin for full-page display */
+  width: auto; /* Make the carousel fill the entire width of the page */
+  margin-left: -8.55%;
+  margin-right: -8.55%;
+  margin-top: -1.55%;
+}
+
+/* Tagline styling */
+.tagline {
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 1.5rem 0; /* Add some space */
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 30px; /* Padding around the tagline */
+  border-radius: 25px; /* Rounded border */
+  background-color: #2e2e2e; /* Background color */
+  text-align: center; /* Center align text */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Caption styling */
+.home .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 15px; /* Padding around the caption */
+  color: #fff; /* Text color */
+  position: absolute; /* Position the caption */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Position at the bottom */
+  max-width: 100%; /* Ensure caption container doesn't exceed the width of the carousel */
+  border-radius: 8px; /* Add border radius for a softer look */
+}
+
+/* Title styling */
+.home .carousel-caption h1 {
+  font-size: 24px; /* Font size for title */
+  font-weight: bold; /* Bold font weight */
+  margin-bottom: 10px; /* Margin at the bottom of the title */
+}
+
+/* Subtitle styling */
+.home .carousel-caption p {
+  font-size: 16px; /* Font size for subtitle */
+  line-height: 1.4; /* Line height for improved readability */
+  margin-bottom: 15px; /* Margin at the bottom of the subtitle */
+}
+
+/* Button styling */
+.home .carousel-caption .btn {
+  background-color: #007bff; /* Button background color */
+  border-color: #007bff; /* Button border color */
+  font-size: 16px; /* Font size for button */
+  border-radius: 25px; /* Border radius for rounded buttons */
+  padding: 8px 20px; /* Padding for buttons */
+}
+
+/* Adjust image size for different screen sizes */
+@media (max-width: 992px) {
+  /* For tablets */
+  .home .carousel img {
+    height: 300px; /* Adjust image height as needed */
+  }
+}
+
+/* Adjust image size for smaller screen sizes */
+@media (max-width: 576px) {
+  /* For small devices like smartphones */
+  .home .carousel img {
+    height: 200px; /* Adjust image height as needed */
+  }
+  
+  /* Further reduce padding for smaller screens */
+  .home .carousel-caption {
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  /* Further reduce font size for smaller screens */
+  .home .carousel-caption h1 {
+    font-size: 20px; /* Adjust font size as needed */
+  }
+  
+  .home .carousel-caption p {
+    font-size: 14px; /* Adjust font size as needed */
+  }
+
+  /* Center align text on smaller screens */
+  .home .carousel-caption {
+    text-align: center;
+  }
+
+  /* Adjust button padding for smaller screens */
+  .home .carousel-caption .btn {
+    padding: 6px 16px; /* Adjust padding as needed */
+  }
+
+  /* Ensure captions are centered on smaller screens */
+  .home .carousel-caption {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Aspect ratio adjustments */
+@media (min-aspect-ratio: 4/3) {
+  /* For images with a 4:3 aspect ratio */
+  .home .carousel img {
+    height: 90vh; /* Make the image fill the entire viewport height */
+    width: auto; /* Auto-adjust width to maintain aspect ratio */
+  }
+}
+@media (max-aspect-ratio: 4/3) {
+  /* For images with an aspect ratio less than 4:3 */
+  .home .carousel img {
+    width: 200vw; /* Make the image fill the entire viewport width */
+    height: auto; /* Auto-adjust height to maintain aspect ratio */
+  }
+}

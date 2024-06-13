@@ -1,0 +1,34 @@
+.trainingclasses {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .trainingclasses .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .trainingclasses .card-body {
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .trainingclasses h1 {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .trainingclasses p {
+    font-size: 1.1em;
+    color: #555555;
+  }
+  
+  .trainingclasses .btn {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .trainingclasses .btn:hover {
+    background-color: #0056b3;
+  }
+  

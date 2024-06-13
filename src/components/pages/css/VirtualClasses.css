@@ -1,0 +1,34 @@
+.virtualclasses {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .virtualclasses .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .virtualclasses .card-body {
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .virtualclasses h1 {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .virtualclasses p {
+    font-size: 1.1em;
+    color: #555555;
+  }
+  
+  .virtualclasses .btn {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .virtualclasses .btn:hover {
+    background-color: #0056b3;
+  }
+  

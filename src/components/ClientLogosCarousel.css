@@ -1,0 +1,33 @@
+/* ClientLogosCarousel.css */
+.client-logos-carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .client-logos-carousel-container {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+      }
+  
+  .carousel-track {
+    display: flex;
+    width: calc(200%); /* Double the width for seamless looping */
+    animation: scrollAnimation 10s linear infinite;
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .carousel-track img {
+    flex-shrink: 0;
+    width: auto; /* Adjust width as needed */
+    height: 100px;
+    margin-right: 200px; /* Adjust margin as needed */
+  }
+  

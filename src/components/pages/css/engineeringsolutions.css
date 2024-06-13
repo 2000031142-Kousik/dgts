@@ -1,0 +1,121 @@
+.engineering-solutions-page {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 120px 0;
+    position: relative;
+  }
+  
+  .shape1,
+  .shape2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff; /* White shape */
+    z-index: 0;
+  }
+  
+  .shape1 {
+    top: -50px;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  }
+  
+  .shape2 {
+    bottom: -50px;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .engineering-solutions-content {
+    background-color: #ffffff; /* White background */
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .engineering-solutions-content p {
+    color: #343a40; /* Bootstrap text color */
+  }
+  
+  .engineering-solutions-points {
+    margin-bottom: 2rem;
+  }
+  
+  .engineering-solutions-points h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #343a40; /* Bootstrap text color */
+  }
+  
+  .engineering-solutions-points ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .key-point {
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: #007bff; /* Bootstrap primary color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .key-point:hover {
+    color: #0056b3; /* Darker shade of primary color */
+  }
+  
+  .key-point-details {
+    margin-top: 2rem;
+  }
+  
+  .key-point-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .key-point-details p {
+    color: #343a40; /* Bootstrap text color */
+  }
+  
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .btn-primary {
+    color: #ffffff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff; /* Bootstrap primary color */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+    border-color: #0056b3; /* Darker shade of primary color */
+  }
+  

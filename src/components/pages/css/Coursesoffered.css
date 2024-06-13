@@ -1,0 +1,7 @@
+.card-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px; /* Adjust the width and height of the icon as needed */
+    height: 70px;
+  }

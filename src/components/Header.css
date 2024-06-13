@@ -1,0 +1,93 @@
+/* General Styles */
+/* Header */
+.header {
+  background-color: #a9e869;
+  padding: 1rem 1.5rem; /* Increase padding for more height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 1.4%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header:hover {
+  background-color: #95b930; /* Slightly darker on hover */
+}
+
+/* Brand/Logo */
+.brand-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.brand-container:hover {
+  color: #fff; /* Keep white color on hover for contrast */
+}
+
+.logo {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  color: #020202;
+}
+
+/* Navbar */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 1rem; /* Add margin to the right for spacing */
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 0.25rem;
+  margin-left: 0.5rem; /* Add spacing between links */
+}
+
+.nav-link:hover {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Toggler button */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive adjustments */
+/* Responsive adjustments */
+@media (max-width: 412.98px) {
+  .header {
+    padding-right: -20%; /* Remove right padding for mobile */
+  }
+  
+  .navbar-nav {
+    margin-right: 0; /* Remove right margin for mobile */
+  }
+  
+  .nav-link {
+    padding-right: 0; /* Remove right padding for mobile */
+  }
+}

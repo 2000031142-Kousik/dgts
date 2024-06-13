@@ -1,0 +1,156 @@
+/* Gradient background for the body */
+body {
+  background: linear-gradient(to bottom right, #5f9bb5, #9aed7a);
+  margin: 10%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set body height to cover the entire viewport */
+  background-attachment: fixed; /* Fix the background position */
+  background-size: cover; /* Ensure the background gradient covers the entire body */
+}
+
+/* Styling for h1 */
+#about h1 {
+  color: #000000; /* Black text color */
+  text-align: center; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for box container */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for box */
+.box {
+  width: calc(100% - 2rem); /* Full width of container with margin */
+  margin-bottom: 2rem; /* Space between boxes */
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff; /* White background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer box shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  display: flex;
+}
+
+/* Styling for box on hover */
+.box:hover {
+  transform: translateY(-5px); /* Lift on hover */
+}
+
+/* Styling for box content */
+.box-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Styling for h2 */
+.box-content h2 {
+  color: #333; /* Dark text color */
+  margin-bottom: 15px; /* Add space below h2 */
+}
+
+/* Styling for paragraphs */
+.box-content p {
+  color: #555; /* Darker text color */
+  line-height: 1.6; /* Improved readability with increased line height */
+}
+
+/* Styling for images */
+.box-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Set position to relative for overlay */
+}
+
+/* Maintain original image width */
+.box-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px; /* Rounded corners for images */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on images */
+.box-image img:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Gradient overlay for images */
+.box-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(34, 33, 33, 0.7)); /* Gradient overlay */
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  border-radius: 15px; /* Rounded corners */
+}
+
+/* Hover effect for gradient overlay */
+.box-image:hover:before {
+  opacity: 1; /* Fully visible on hover */
+}
+
+/* Styling for box on hover with gradient */
+.box:hover:before {
+  opacity: 0.3; /* Reduced opacity on hover */
+}
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 412px) {
+  /* Position image above content on mobile */
+  .box {
+    flex-direction: column;
+  }
+
+  /* Ensure image takes full width */
+  .box-image {
+    width: 100%;
+    order: -1; /* Move image to the top */
+    margin-bottom: 1rem; /* Add space between image and content */
+  }
+
+  /* Reduce margin between image and content */
+  .box-image img {
+    border-radius: 15px 15px 0 0; /* Rounded corners only on top */
+  }
+  
+  /* Ensure box content and images fit well on mobile */
+  .box-content {
+    padding: 10px;
+  }
+  
+  /* Reduce font size for h2 on mobile */
+  .box-content h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust padding and font size for paragraphs on mobile */
+  .box-content p {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+}
+
+/* Position images alternately on desktop screens */
+@media (min-width: 768px) {
+  /* Reset the order for all images to be on the right */
+  .box-image {
+    order: 2; /* Move image to the right */
+  }
+
+  /* Position alternate images on the left */
+  .box:nth-child(even) .box-image {
+    order: -1; /* Move image to the left */
+  }
+}
